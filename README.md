@@ -20,9 +20,10 @@ This project focuses on developing a robust deepfake detection system leveraging
 *   Next.js
 *   [Other libraries/frameworks used, e.g., TensorFlow, PyTorch]
 
-High-Level Architecture
-mermaid
-Technology Stack
+High-Level Architecture:
+<img width="450" height="327" alt="image" src="https://github.com/user-attachments/assets/bf9cdcd0-9cc0-4092-965a-828a429a113d" />
+
+Technology Stack:
 Frontend Framework: React with TypeScript
 Build Tool: Vite
 Styling: Tailwind CSS
