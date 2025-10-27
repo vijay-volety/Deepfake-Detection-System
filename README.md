@@ -2,8 +2,6 @@
 
 Deepfake Detection System | Powered by ResNeXt + LSTM Technology
 
-[Link to GitHub repository]
-
 ## Overview
 
 This project focuses on developing a robust deepfake detection system leveraging the strengths of both ResNeXt and LSTM neural networks. The system is designed to analyze video and image data to identify manipulated or synthetic content.
@@ -12,8 +10,7 @@ This project focuses on developing a robust deepfake detection system leveraging
 
 *   **ResNeXt Integration:** Utilizes ResNeXt for feature extraction, capturing rich spatial hierarchies within the input data.
 *   **LSTM for Temporal Analysis:** Employs LSTM networks to model temporal dependencies in video sequences, crucial for detecting subtle inconsistencies indicative of deepfakes.
-*   **Next.js Frontend:** A modern web interface built with Next.js for easy interaction and visualization of detection results.
-*   **[Add other features here, e.g., specific datasets used, performance metrics]**
+*   **Next.js Frontend:** A modern web interface built with Next.js for easy interaction and visualization of detection results
 
 ## Technologies Used
 
@@ -23,34 +20,30 @@ This project focuses on developing a robust deepfake detection system leveraging
 *   Next.js
 *   [Other libraries/frameworks used, e.g., TensorFlow, PyTorch]
 
-## Getting Started
+🧩 Usage
 
-1.  **Clone the repository:**
-    ```bash
-    git clone [repository URL]
-    ```
-2.  **Install dependencies:**
-    ```bash
-    cd [project directory]
-    npm install
-    ```
-3.  **[Add specific setup instructions, e.g., environment variables, data preparation]**
-4.  **Run the application:**
-    ```bash
-    npm start
-    ```
+Upload an image or video using the upload interface.
 
-## Usage
+The system processes the file using ResNeXt + LSTM models.
 
-[Explain how to use the system, e.g., upload videos/images, interpret results]
+View the confidence score and side-by-side media preview to assess authenticity.
 
-## Contributing
+Download or save the detection report for verification.
 
-[Guidelines for contributing to the project]
+🤝 Contributing
 
-## License
+We welcome contributions from the community!
 
-[Specify the license under which the project is released]
+Fork the repository and create a new branch for your feature or fix.
+
+Ensure code readability and follow standard ESLint/Prettier conventions.
+
+Submit a pull request with a clear description of your changes.
+
+📜 License
+
+This project is released under the MIT License.
+You are free to use, modify, and distribute this software for educational or research purposes, provided that proper credit is given to the original authors.
 
 ## Contact
 
