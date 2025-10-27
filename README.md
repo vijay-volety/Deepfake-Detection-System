@@ -31,24 +31,10 @@ Component Library: ShadCN UI components
 Routing: React Router DOM
 State Management: React Hooks, TanStack Query
 Notification System: Toast/Sonner
-Directory Structure
-src/
-├── components/           # Reusable UI components
-│   ├── ui/              # ShadCN UI components
-│   ├── FileUpload.tsx   # Media upload component
-│   ├── Header.tsx       # Application header
-│   ├── MediaPreview.tsx # Media preview display
-│   └── ResultCard.tsx   # Detection results display
-├── hooks/               # Custom React hooks
-│   └── use-toast.ts     # Toast notification hook
-├── lib/                 # Business logic and utilities
-│   ├── detection-service.ts # Mock detection API service
-│   └── utils.ts         # Utility functions
-├── pages/               # Page-level components
-│   ├── Index.tsx        # Main dashboard page
-│   └── NotFound.tsx     # 404 error page
-├── App.tsx              # Main application component
-└── main.tsx             # Application entry point
+Directory Structure:
+
+<img width="499" height="447" alt="image" src="https://github.com/user-attachments/assets/f24cb1bc-ba84-4f97-a73b-4c049be30973" />
+
 Core Components
 1. User Interface Layer
 Header: Navigation and branding
