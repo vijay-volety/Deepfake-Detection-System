@@ -20,6 +20,102 @@ This project focuses on developing a robust deepfake detection system leveraging
 *   Next.js
 *   [Other libraries/frameworks used, e.g., TensorFlow, PyTorch]
 
+High-Level Architecture
+mermaid
+Technology Stack
+Frontend Framework: React with TypeScript
+Build Tool: Vite
+Styling: Tailwind CSS
+Package Manager: Bun
+Component Library: ShadCN UI components
+Routing: React Router DOM
+State Management: React Hooks, TanStack Query
+Notification System: Toast/Sonner
+Directory Structure
+src/
+├── components/           # Reusable UI components
+│   ├── ui/              # ShadCN UI components
+│   ├── FileUpload.tsx   # Media upload component
+│   ├── Header.tsx       # Application header
+│   ├── MediaPreview.tsx # Media preview display
+│   └── ResultCard.tsx   # Detection results display
+├── hooks/               # Custom React hooks
+│   └── use-toast.ts     # Toast notification hook
+├── lib/                 # Business logic and utilities
+│   ├── detection-service.ts # Mock detection API service
+│   └── utils.ts         # Utility functions
+├── pages/               # Page-level components
+│   ├── Index.tsx        # Main dashboard page
+│   └── NotFound.tsx     # 404 error page
+├── App.tsx              # Main application component
+└── main.tsx             # Application entry point
+Core Components
+1. User Interface Layer
+Header: Navigation and branding
+FileUpload: Drag-and-drop or browse file selection
+MediaPreview: Displays uploaded media content
+ResultCard: Shows detection results with confidence metrics
+Dashboard: Main layout with responsive grid
+2. State Management
+React Hooks: useState, useEffect for component state
+TanStack Query: Server state management for API calls
+Context Providers: Theme, toast, and tooltip providers
+3. Business Logic Layer
+Detection Service:
+Handles file processing simulation
+Generates mock detection results
+Manages processing delays
+Calculates confidence scores
+4. Data Flow
+User uploads media file via FileUpload
+File is passed to detection service in Index
+Detection service simulates analysis in detection-service.ts
+Results are displayed in ResultCard
+Media preview updates in MediaPreview
+Key Features
+Responsive Design: Mobile-first approach with Tailwind CSS
+Component-Based Architecture: Reusable, modular components
+Mock Detection Service: Simulates deepfake analysis
+Real-time Feedback: Processing states and notifications
+Accessibility: Proper labeling and keyboard navigation
+Development Workflow
+Development Server: bun run dev (runs on port 8081)
+Production Build: bun run build
+Code Linting: bun run lint
+This architecture separates concerns effectively, making the application maintainable and scalable for future enhancements such as integrating with actual deepfake detection APIs.
+
+
+
+Prerequisites
+Make sure you have Node.js installed (version 16 or higher)
+Install Bun globally: npm install -g bun
+Commands to Run the Project
+1. Navigate to the project directory:
+bash
+cd c:\Users\volet\OneDrive\Desktop\Deep-Fake-Detection-System--main\Deep-Fake-Detection-System--main
+2. Install dependencies:
+bash
+bun install
+3. Start the development server:
+bash
+bun run dev
+Alternatively, you can also use npm:
+bash
+npm install
+npm run dev
+4. Access the application:
+Once the server starts, you can access the application at:
+Local URL: http://localhost:8081/
+Network URL: http://your-network-ip:8081/
+Other Available Commands:
+Build for production: bun run build or npm run build
+Preview production build: bun run preview or npm run preview
+Lint code: bun run lint or npm run lint
+The development server will automatically reload when you make changes to the code. Port 8081 is used because port 8080 was already in use on your system.
+
+
+
+
 🧩 Usage
 
 Upload an image or video using the upload interface.
